@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiver Lerntrainer – Hauptübersicht</title>
+    <!-- Tailwind CSS CDN für modernes Design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-800 flex flex-col">
+
+    <!-- Header / Banner -->
+    <header class="bg-slate-900 text-white shadow-lg border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 py-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-4">
+                <div class="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center text-white text-2xl shadow-md">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-extrabold tracking-tight">Interaktiver Lerntrainer</h1>
+                    <p class="text-slate-400 text-sm mt-1">Überblick aller Fächer & Übungsmodule</p>
+                </div>
+            </div>
+            <div class="text-xs bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1.5 rounded-full">
+                <i class="fa-solid fa-bolt text-amber-400 mr-1"></i> 5-Minuten-Challenges
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-10 flex-grow w-full">
+        
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-2">Wähle dein Fach aus</h2>
+            <p class="text-slate-600">Starte eine Trainingssession in deinem gewünschten Fachbereich.</p>
+        </div>
+
+        <!-- Grid mit den 3 Haupt-Trainern -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Card 1: Mathe Trainer -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col justify-between overflow-hidden group">
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Mathe Trainer</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Einmaleins (1-12), Bruchrechnen, Dezimalzahlen und Prozentrechnung in interaktiven Einheiten.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1 mb-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-indigo-500"></i> Einmaleins-Trainer</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-indigo-500"></i> Bruch, Dezimal & Prozent</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+                    <a href="https://namalumino.github.io/mathe_trainer/" class="w-full inline-flex justify-center items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 px-4 rounded-xl transition shadow-sm">
+                        <span>Zum Mathe-Trainer</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Deutsch Trainer -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col justify-between overflow-hidden group">
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Deutsch Trainer</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Satzglieder bestimmen, Rechtschreibung, Grammatik und gezielte Wortschatz-Übungen.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1 mb-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-500"></i> Satzglieder bestimmen</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-500"></i> Rechtschreibung & Grammatik</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+                    <a href="https://namalumino.github.io/deutsch_trainer/" class="w-full inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl transition shadow-sm">
+                        <span>Zum Deutsch-Trainer</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: GWB / Geografie & Wirtschaftskunde Trainer -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col justify-between overflow-hidden group">
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">GWB Trainer</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Geografie, Wirtschaftskunde und Allgemeinwissen interaktiv abfragen und festigen.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-1 mb-4">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-amber-500"></i> Topografie & Karten</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-check text-amber-500"></i> Wirtschaftskunde-Quiz</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+                    <a href="https://namalumino.github.io/gwb_trainer/" class="w-full inline-flex justify-center items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-medium py-2.5 px-4 rounded-xl transition shadow-sm">
+                        <span>Zum GWB-Trainer</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-slate-500 text-sm mt-auto">
+        <p>Interaktives Lernportal &bull; Powered by GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
